@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+.container{
+	min-height: 100%;
+	background: #f2f4f7;
+	width: 1080px;
+	margin: 0 auto;
+	margin-top: 30px;
+	
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+	grid-template-rows: repeat(4, minmax(50px,auto));
+	grid-auto-flow: dense;
+	
+	grid-gap:5px;
+
+	grid-template-areas:
+	"gnb gnb gnb gnb"
+	"header header header header2"
+	"navi navi navi navi"
+	"main main main main"
+	"footer footer footer footer"
+	
+}
+
+.item:first-child{
+	/*gnb*/
+	width:100%;
+	height:50px;
+	background-color: orange;
+	grid-area: gnb;
+	position:relative
+}
+
+.item:nth-child(2){
+	background-color:aqua;
+	grid-area: header;
+}
+.item:nth-child(3){
+	height:100px;
+	grid-area: header2;
+	background-color:red;
+}
+
+.item:nth-child(4){
+	background-color: purple;
+	height:50px;
+	grid-area: navi;
+}
+
+.item:nth-child(5){
+	height:500px;
+	background-color:blue;
+	grid-area:main;
+}
+.item:last-child{
+	height:100px;
+	background-color:green;
+	grid-area:footer;
+}
+
+/*로고영역*/
+.logo_area{
+	width: 25%;
+    height: 100%;
+    float:left;
+}
+
+.logo_area img{
+    width: 100%;
+    height: 100%;
+}

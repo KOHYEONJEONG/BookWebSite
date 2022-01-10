@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+a{
+    text-decoration: none;
+}
+ 
+.top_gnb_area .list{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    
+}
+ 
+.top_gnb_area .list li{
+    list-style: none;    
+    float : left;
+    padding: 13px 15px 0 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
